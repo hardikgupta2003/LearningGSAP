@@ -13,3 +13,10 @@ timeline
 .from('.left',{duration:2,x:'100vw'})
 .to('.footer', { duration: 2, ease: "power2.in",y:0})
 .fromTo(".button", {rotation: 720,opacity:0,scale:0}, {rotation: 0, duration: 1.5,opacity:1,scale:1});
+
+const button = document.querySelector('.button')
+
+button.addEventListener('click',()=>{
+    timeline.timeScale(3);
+    timeline.reverse();
+})
