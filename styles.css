@@ -33,6 +33,7 @@ body{
     background-color: green;
     width: 15vw;
 }
-button{
+.button{
     align-self: center;
+    cursor: pointer;
 }
